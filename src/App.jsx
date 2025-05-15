@@ -441,7 +441,7 @@ function App() {
                         </svg>
                       </div>
                       <div className="ml-3 text-base text-gray-500">
-                        <p>+1 (555) 123-4567</p>
+                        <p>+254 (748)167578 </p>
                       </div>
                     </div>
                     <div className="mt-3 flex">
