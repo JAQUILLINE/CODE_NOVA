@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import './App.css'
 
+
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -12,10 +13,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-              <div className="flex-shrink-0 flex items-center">
-                <span className="text-2xl font-bold text-indigo-600">CodeNova</span>
-              </div>
-              <div className="hidden md:ml-6 md:flex md:space-x-8">
+             
+              <div className="hidden md:ml-6 md:flex md:space-x-8 justify-between">
                 <a href="#" className="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                   Home
                 </a>
@@ -25,6 +24,8 @@ function App() {
                 <a href="#about" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                   About
                 </a>
+                <span className="text-2xl font-bold text-indigo-600">CodeNova</span>
+
                 <a href="#portfolio" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                   Portfolio
                 </a>
@@ -34,11 +35,11 @@ function App() {
               </div>
             </div>
             <div className="flex items-center">
-              <div className="hidden md:ml-6 md:flex md:items-center">
+              {/* <div className="hidden md:ml-6 md:flex md:items-center">
                 <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium">
                   Get a Quote
                 </button>
-              </div>
+              </div> */}
               <div className="-mr-2 flex items-center md:hidden">
                 <button
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -85,6 +86,25 @@ function App() {
       </nav>
 
       {/* Hero Section */}
+
+      <div
+        className=" w-[90%] m-auto mt-10 relative bg-no-repeat bg-cover h-full rounded-xl overflow-hidden text-white py-20 px-6 sm:px-12 lg:px-20 shadow-lg bg-[url('./assets/hero.jpg')] bg-center"
+         
+      >
+
+
+
+        <h1 className='text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl"'>This is my heading</h1>
+        <p className='mt-3 text-white text-center py-6 '>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, magnam quos ipsum rem eius odit sunt! Magni tempora, quia harum rerum quod temporibus, amet, voluptas debitis dicta veritatis enim. Cupiditate.
+          Incidunt ipsum exercitationem maxime tempora nostrum reprehenderit ad mollitia totam velit obcaecati? Illo, ipsam corrupti sequi consequatur, inventore nobis quis ab impedit sit obcaecati nihil similique, unde delectus soluta porro.
+        </p>
+        <button type="button" className='px-6 py-3 bg-white text-indigo-600 font-semibold rounded-lg shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-150 ease-in-out'>
+          get started
+        </button>
+
+
+      </div>
       <div className="relative bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -93,7 +113,7 @@ function App() {
             </svg>
 
             <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-              <div className="sm:text-center lg:text-left">
+              <div className="sm:text-center lg:text-center">
                 <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                   <span className="block xl:inline">Innovative Solutions for</span>
                   <span className="block text-indigo-600 xl:inline"> Digital Transformation</span>
@@ -111,6 +131,9 @@ function App() {
                     <a href="#services" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
                       Our Services
                     </a>
+                    <section className="bg-[#FFEBD8] rounded-[40px] px-6 py-20 text-center max-w-6xl mx-auto mt-10">
+
+                    </section>
                   </div>
                 </div>
               </div>
@@ -169,7 +192,7 @@ function App() {
 
               {/* Service 3 */}
               <div className="relative">
-                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white border-radius-30px" >
                   <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                   </svg>
@@ -190,7 +213,7 @@ function App() {
                   </svg>
                 </div>
                 <div className="ml-16">
-                                   <h3 className="text-lg leading-6 font-medium text-gray-900">Digital Transformation</h3>
+                  <h3 className="text-lg leading-6 font-medium text-gray-900">Digital Transformation</h3>
                   <p className="mt-2 text-base text-gray-500">
                     Strategic consulting and implementation services to help your business adapt and thrive in the digital era.
                   </p>
@@ -227,7 +250,7 @@ function App() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="mt-5 bg-white overflow-hidden shadow rounded-lg">
                   <div className="px-4 py-5 sm:p-6">
                     <h3 className="text-lg leading-6 font-medium text-gray-900">Our Approach</h3>
@@ -239,7 +262,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="mt-5 md:mt-0">
                 <div className="bg-white overflow-hidden shadow rounded-lg">
                   <div className="px-4 py-5 sm:p-6">
@@ -255,7 +278,7 @@ function App() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="mt-5 bg-white overflow-hidden shadow rounded-lg">
                   <div className="px-4 py-5 sm:p-6">
                     <h3 className="text-lg leading-6 font-medium text-gray-900">Our Team</h3>
@@ -447,7 +470,7 @@ function App() {
                     <div className="mt-3 flex">
                       <div className="flex-shrink-0">
                         <svg className="h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
                       </div>
                       <div className="ml-3 text-base text-gray-500">
@@ -541,7 +564,7 @@ function App() {
               </a>
             </div>
             <div className="mt-8 md:mt-0 md:order-1">
-                           <p className="text-center text-base text-gray-400">
+              <p className="text-center text-base text-gray-400">
                 &copy; {new Date().getFullYear()} CodeNova. All rights reserved.
               </p>
             </div>
@@ -558,9 +581,7 @@ function App() {
                 Cookie Policy
               </a>
             </div>
-            <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-              Designed and developed with ❤️ by the CodeNova team.
-            </p>
+
           </div>
         </div>
       </footer>
