@@ -4,6 +4,10 @@
 >>>>>>> 5274202 (first commit)
 # React + Vite
 
+The link to my live website;
+[live](https://code-nova-sdwl.vercel.app/) 
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
