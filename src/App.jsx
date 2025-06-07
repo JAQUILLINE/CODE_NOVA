@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
-import Coaching from './components/coaching';
+import Coaching from './components/Coaching';
 import Testimonials from './components/Testimonials';
 import Partners from './components/partners';
 
