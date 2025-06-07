@@ -1,7 +1,7 @@
 import React from 'react'
 import coachingImage from "../assets/coaching1.webp";
 
-const coaching = () => {
+const Coaching = () => {
     return (
         <div className='coaching'>
             
@@ -21,4 +21,4 @@ const coaching = () => {
     )
 }
 
-export default coaching
+export default Coaching
