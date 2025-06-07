@@ -7,7 +7,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Coaching from './components/Coaching';
 import Testimonials from './components/Testimonials';
-import Partners from './components/partners';
+// import Partners from './components/partners';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       <Services />
       <Coaching />
       <Testimonials />
-      <Partners />
+      {/* <Partners /> */}
     </div>
   );
 }
